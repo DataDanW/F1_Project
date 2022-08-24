@@ -1,18 +1,11 @@
-
-# How many races have we had so far in 2022?
-# Which circuit has the fastest lap time?
-# Which driver has scored the most fastest laps points? 
-# Which team has had the most DNFs? 
-# Which driver has the most pole positions? 
-
-
-# How many races have we had so far in 2022? - 13
+# How many races have we had so far in 2022? 
+-- 13
 SELECT COUNT(DISTINCT Track) FROM Test.SeasonResults;
 SELECT DISTINCT Track FROM Test.SeasonResults;
 
 
-
-# Which circuit has the fastest lap time? - Austria 1:07.275
+# Which circuit has the fastest lap time? 
+-- Austria 1:07.275
 SELECT Track, MIN(FastestLap) FROM Test.SeasonResults
 GROUP BY Track
 ORDER BY MIN(FastestLap);
@@ -54,4 +47,3 @@ SELECT Track, Team, StartingGrid FROM Test.SeasonResults
 WHERE Team LIKE "% ferrari"
 ORDER BY StartingGrid
 LIMIT 3;
-
