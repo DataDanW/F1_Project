@@ -15,6 +15,4 @@ I've become pretty familiar with writing basic queries using select statement, a
 
 You'll find a selection of queries used to answer questions I wanted to solve from the data. 
 
-Datasource: Kaggle
-Tools: MySQL Workbench
-Data visualisation: Tableau
+Datasource: Kaggle | Tools: MySQL Workbench | Data visualisation: Tableau
